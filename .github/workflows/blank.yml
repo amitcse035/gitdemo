@@ -1,0 +1,24 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Terrform DBT CLoud resource
+on:
+   workflow_dispatch:
+     inputs:
+       environment:
+        description: cloud env
+        required: true
+        type: choice
+        default: dev
+        options: 
+         - dev
+         - test
+       custom_branch:
+        description: abc
+        required: false
+       is_dry_run:
+        description: mkp
+        required: true
+        type: boolean
+        default: true
+
+        
